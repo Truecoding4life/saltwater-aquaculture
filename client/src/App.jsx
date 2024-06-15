@@ -9,20 +9,10 @@ function App() {
   return (
     <>
       <div>
-     
+        
       </div>
-      <h1>Fish Aquarium</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 style={{color:'yellow'}}>Fish Aquarium</h1>
+      
     </>
   )
 }
