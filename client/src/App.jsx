@@ -1,22 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 import './App.css'
-import NavbarCompt from './components/Navbar/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import NavbarCompt from './components/Navbar/Navbar'
+import Feature from './components/Feature/Feature'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <Container fluid>
+      <Row>
+
         <NavbarCompt />
-      <div>
-        
-      </div>
+      </Row>
+      <Row >
+        <Feature />
+      </Row>
       
-    </>
+    </Container>
   )
 }
 

@@ -1,7 +1,20 @@
 #navbar{
-    background-color: #a4b4df;
+    background-color: #e0e0e0;
     color: white;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
+}
+
+#saleOffer{
+    background-color: rgba(212, 60, 60, 0.873);
+    font-weight: 600;
+    color: #fcfcfc;
+}
+#saleOffer:hover{
+
+    background-color: #c41212;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
 }
