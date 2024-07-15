@@ -1,0 +1,46 @@
+
+.container{
+    position: relative;
+    display: inline-block;
+   
+}
+
+#promoteImage{
+    border-radius: 30px;
+}
+
+#promoteString{
+        position: absolute;
+        font-size: 60px;
+        font-weight: bold;
+        color: #ededed;   
+        top: 9%;
+        left: 5%;
+        background-color: none;
+        text-shadow:       2px 2px 0 #fa7f14, 
+        -2px -2px 0 #fa7f14,
+        2px -2px 0 #fa7f14,
+        -2px 2px 0 #fa7f14,
+        2px 0 0 #fa7f14,
+        -2px 0 0 #fa7f14,
+        0 2px 0 #fa7f14,
+        0 -2px 0 #fa7f14;;
+ }
+
+ #releaseString{
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ededed;   
+    top: 5%;
+    left: 5%;
+    background-color: none;
+    text-shadow:       2px 2px 0 #367ace, 
+    -2px -2px 0 #367ace,
+    2px -2px 0 #367ace,
+    -2px 2px 0 #367ace,
+    2px 0 0 #367ace,
+    -2px 0 0 #367ace,
+    0 2px 0 #367ace,
+    0 -2px 0 #367ace;;
+}

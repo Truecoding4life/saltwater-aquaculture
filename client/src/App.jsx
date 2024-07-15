@@ -5,20 +5,30 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarCompt from './components/Navbar/Navbar'
 import Feature from './components/Feature/Feature'
+import Promotion from './components/Promotion/Promotion';
 
 function App() {
 
   return (
-    <Container fluid>
-      <Row>
+    <>
 
-        <NavbarCompt />
-      </Row>
-      <Row >
-        <Feature />
-      </Row>
-      
-    </Container>
+      <Container fluid>
+        <Row>
+
+          <NavbarCompt />
+        </Row>
+        <Row >
+          <Feature />
+        </Row>
+
+      </Container>
+      <Container>
+       
+          <Promotion />
+       
+
+      </Container>
+    </>
   )
 }
 
