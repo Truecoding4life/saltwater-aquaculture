@@ -1,0 +1,18 @@
+.inline-link {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 30px;
+    padding: 4px;
+  }
+
+  .inline-link:hover{
+    color: rgb(91, 91, 91);
+    transition: 0.3s;
+ 
+  }
+  
+  #nav-link{
+    background-color: rgb(255, 255, 255);
+    padding-block: 2px;
+  }

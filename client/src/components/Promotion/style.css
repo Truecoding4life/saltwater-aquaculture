@@ -1,30 +1,36 @@
-
+*{
+    --special-character: rgb(65, 43, 151) ;
+}
 .container{
     position: relative;
-    display: inline-block;
+    width: 100%;
+    padding: 0;
    
 }
 
 #promoteImage{
-    border-radius: 30px;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 #promoteString{
         position: absolute;
         font-size: 60px;
+        font-family:  "Roboto";
         font-weight: bold;
-        color: #ededed;   
+        color: #e5e4e4;   
         top: 9%;
         left: 5%;
         background-color: none;
-        text-shadow:       2px 2px 0 #fa7f14, 
-        -2px -2px 0 #fa7f14,
-        2px -2px 0 #fa7f14,
-        -2px 2px 0 #fa7f14,
-        2px 0 0 #fa7f14,
-        -2px 0 0 #fa7f14,
-        0 2px 0 #fa7f14,
-        0 -2px 0 #fa7f14;;
+        text-shadow:       2px 2px 0 var(--special-character), 
+        -2px -2px 0 var(--special-character),
+        2px -2px 0 var(--special-character),
+        -2px 2px 0 var(--special-character),
+        2px 0 0 var(--special-character),
+        -2px 0 0 var(--special-character),
+        0 2px 0 var(--special-character),
+        0 -2px 0 var(--special-character);;
  }
 
  #releaseString{
@@ -35,12 +41,12 @@
     top: 5%;
     left: 5%;
     background-color: none;
-    text-shadow:       2px 2px 0 #367ace, 
-    -2px -2px 0 #367ace,
-    2px -2px 0 #367ace,
-    -2px 2px 0 #367ace,
-    2px 0 0 #367ace,
-    -2px 0 0 #367ace,
-    0 2px 0 #367ace,
-    0 -2px 0 #367ace;;
+    text-shadow:       2px 2px 0 var(--special-character), 
+    -2px -2px 0 var(--special-character),
+    2px -2px 0 var(--special-character),
+    -2px 2px 0 var(--special-character),
+    2px 0 0 var(--special-character),
+    -2px 0 0 var(--special-character),
+    0 2px 0 var(--special-character),
+    0 -2px 0 var(--special-character);;
 }

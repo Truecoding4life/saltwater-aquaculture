@@ -1,9 +1,7 @@
 #navbar{
-    background-color: #e0e0e0;
+    background-color: #000000eb;
     color: white;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
+   
 }
 
 #saleOffer{
@@ -17,4 +15,20 @@
     color: white;
     cursor: pointer;
     transition: 0.5s;
+}
+#nav-brand{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-inline: auto;
+    background: linear-gradient(90deg, rgba(89,45,147,1) 0%, rgba(136,58,199,1) 35%, rgba(89,49,138,1) 100%);
+    background-clip: text;
+    color: transparent; 
+    
+}
+
+#nav-brand:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    color: rgb(126, 59, 208);
 }
