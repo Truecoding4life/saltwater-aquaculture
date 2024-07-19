@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 
 const Promotion = ()=> {
     return (
-       <Container>
+       <Container fluid>
 
         <Row>
             <Col className='container text-center'>

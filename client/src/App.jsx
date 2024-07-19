@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import './App.css'
@@ -17,16 +18,9 @@ function App() {
 
           <NavbarCompt />
         </Row>
-        <Row >
-          <Feature />
-        </Row>
+       <Outlet/>
 
-      </Container>
-      <Container>
-       
-          <Promotion />
-       
-
+ 
       </Container>
     </>
   )
