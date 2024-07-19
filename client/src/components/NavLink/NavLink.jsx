@@ -5,13 +5,13 @@ import Row from 'react-bootstrap/Row'
 const NavLink = ()=>{
     return (
         <Container id='nav-link' >
-        <Link to='Sale' className="inline-link">
+        <Link to='sale' className="inline-link">
           <h2>Anemone</h2>
         </Link>    
-        <Link to='/' className="inline-link">
+        <Link to='shipping' className="inline-link">
           <h2>Shipping</h2>
         </Link>
-        <Link to='/' className="inline-link">
+        <Link to='special-request' className="inline-link">
           <h2>Special Request </h2>
         </Link>
         

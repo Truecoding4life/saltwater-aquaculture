@@ -21,11 +21,11 @@ const Footer = ()=>{
             <Row id="links" >
                 <Col className="d-flex justify-content-center">
                
-                <a href="google.com">  About Us </a> <a href="microsoft.com"> Military Discount</a> <a href="/"> Guarantee Policy</a>
+                <a href="google.com">  ABOUT US </a> <a href="microsoft.com"> MILITARY DISCOUNT </a> <a href="/"> GUARANTEE </a>
              </Col>
             </Row>
             <Row className="info">
-                <Col className="d-flex justify-content-center"> <p> LOCATION : CALIFORNIA </p>   <p> PHONE : 408 - 242 - 5371</p> <p> EMAIL : NGHIEMJAY@GMAIL.COM</p> </Col>
+                <Col className="d-flex justify-content-center"> <p> LOCATION : CALIFORNIA </p>   <p> PHONE : (408)-242-5371</p> <p> EMAIL : NGHIEMJAY@GMAIL.COM</p> </Col>
                 
             </Row>
         </Container>

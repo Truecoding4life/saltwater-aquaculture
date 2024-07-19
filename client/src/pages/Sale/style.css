@@ -1,0 +1,28 @@
+#shop{
+    min-height: 100vh;
+    background-color: rgb(223, 223, 223);
+    font-family: "Roboto", sans-serif;
+}
+
+#shop #header {
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#shop #subheader {
+    padding: 20px;
+    font-size: 20px;
+}
+
+#store .product-name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  font-style: normal;
+}
+
+#store .product:hover{
+    cursor: pointer;
+   
+}
+
