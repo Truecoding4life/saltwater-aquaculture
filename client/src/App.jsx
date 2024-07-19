@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarS from './components/Navbar/Navbar'
 import Feature from './components/Feature/Feature'
 import NavLink from './components/NavLink/NavLink'
+import Footer from './components/Footer/Footer'
 import Promotion from './components/Promotion/Promotion';
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
 
        <Outlet className='text-center'/>
 
- 
+      <Row>
+        <Footer/>
+      </Row>
       </Container>
     </div>
   )

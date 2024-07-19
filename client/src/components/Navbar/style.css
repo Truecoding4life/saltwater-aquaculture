@@ -21,14 +21,12 @@
     font-weight: 400;
     font-size: 50px;
     margin-inline: auto;
-    background: linear-gradient(90deg, rgba(89,45,147,1) 0%, rgba(136,58,199,1) 35%, rgba(89,49,138,1) 100%);
-    background-clip: text;
-    color: transparent; 
+    color: #fcfcfc;
     
 }
 
 #nav-brand:hover{
     transform: scale(1.1);
     transition: 0.2s;
-    color: rgb(126, 59, 208);
+    color: rgb(244, 244, 244);
 }

@@ -9,9 +9,6 @@ const NavLink = ()=>{
           <h2>Anemone</h2>
         </Link>    
         <Link to='/' className="inline-link">
-          <h2>Our Info</h2>
-        </Link>
-        <Link to='/' className="inline-link">
           <h2>Shipping</h2>
         </Link>
         <Link to='/' className="inline-link">

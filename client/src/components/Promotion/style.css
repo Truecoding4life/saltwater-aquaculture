@@ -1,5 +1,5 @@
 *{
-    --special-character: rgb(65, 43, 151) ;
+    --special-character: rgb(73, 65, 107) ;
 }
 .container{
     position: relative;
@@ -49,4 +49,19 @@
     -2px 0 0 var(--special-character),
     0 2px 0 var(--special-character),
     0 -2px 0 var(--special-character);;
+}
+
+#aquaculture{
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+#headline{ 
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+
+#context{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
 }

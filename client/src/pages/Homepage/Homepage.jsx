@@ -5,8 +5,7 @@ const Homepage = ()=>{
     return (
         <>
         <Promotion/>
-        <>
-        </>
+       
         </>
     )
 }

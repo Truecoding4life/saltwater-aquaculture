@@ -1,0 +1,19 @@
+.contact-icon{
+    margin: 10px;
+}
+
+#footer #links a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+    background-color: rgb(231, 231, 231);
+    padding: 30px;
+}
+
+#footer .info p {
+    padding: 20px;
+}
+
