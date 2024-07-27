@@ -1,13 +1,13 @@
 let Animals = {
     coral: {
-        RBTA: {
-            name: 'Rose Bubble Tip Anemone',
-            price: 200,
+        ZOA: {
+            name: 'Zoanthids',
+            price: 120,
             inStock: true,
-            care: 'Rose Bubble Tip Anemones require stable water parameters and moderate to high lighting. They thrive in environments with moderate water flow. It is recommended to feed them small pieces of shrimp or fish occasionally, although they can also derive energy from photosynthesis.',
-            description: 'The Rose Bubble Tip Anemone is a popular choice among marine aquarists due to its striking rose-colored tentacles. This anemone can add a splash of vibrant color to any reef tank.',
-            image: 'https://example.com/rbta.jpg',
-            url: 'ROSEBTA'
+            care: 'Zoanthids are hardy corals that require moderate lighting and water flow. They can be fed small pieces of shrimp or plankton, but can also thrive through photosynthesis. Regular water changes help maintain optimal conditions.',
+            description: 'Zoanthids are small colonial corals with vibrant colors and patterns. They are popular for their easy care and ability to quickly spread across rock surfaces.',
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrA4j9xAjj4YWOETWWOsFW4E48jbpTVrDQlw&s'
+            ,url: 'ZOA'
         },
         GSP: {
             name: 'Green Star Polyp',
@@ -15,7 +15,7 @@ let Animals = {
             inStock: true,
             care: 'Green Star Polyps are relatively easy to care for, requiring moderate lighting and water flow. They spread quickly and can cover large areas of rock or substrate in the aquarium. Regular pruning is necessary to control their growth.',
             description: 'Green Star Polyps are known for their bright green coloration and their ability to form a carpet-like mat over the rockwork. They are a great addition for beginners due to their hardy nature.',
-            image: 'https://example.com/gsp.jpg',
+            image: 'https://koralkingdom.com/cdn/shop/files/2_80f30eaa-2c65-4c93-a760-fff43a26d732.jpg?v=1688231187',
             url: 'GSP'
         }
     },

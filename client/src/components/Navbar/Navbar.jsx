@@ -21,8 +21,8 @@ const NavbarS = () => {
             <Link to='anemone' className="inline-link">
               <h4>Anemone</h4>
             </Link>
-            <Link to='shipping' className="inline-link">
-              <h4>Shipping</h4>
+            <Link to='coral' className="inline-link">
+              <h4>Coral</h4>
             </Link>
             <Link to='special-request' className="inline-link">
               <h4>Special Request </h4>

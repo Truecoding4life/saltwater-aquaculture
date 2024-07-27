@@ -35,7 +35,7 @@ const Detail = () => {
                 </Col>
                 <Col xl={8} className=''>
                     <div id='add-to-cart-section' style={{ paddingInlineEnd:'30%'}}  >
-                        <h2 id='product-name'> Chicago Sunburst Anemone</h2>
+                        <h2 id='product-name'> {product.name}</h2>
                         <div id='price-display' className='d-flex justify-content-between'>
                             <h3 id='price'> ${product.price}</h3>
                             {product.inStock ? <p id='inStock'> In Stock</p> : <p id='outStock'> Out of Stock</p>}

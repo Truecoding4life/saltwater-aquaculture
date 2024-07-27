@@ -51,7 +51,7 @@ const SalePage = () => {
             </Row>
             <Row id='store' className=''>
                 {data.map((item, index) => (
-                    <Product key={index} product={item} />
+                    <Product key={index} product={item} category={category} />
                 ))}
             </Row>
         </Container>

@@ -2,7 +2,7 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
-const Product = ({ product }) => {
+const Product = ({ product, category }) => {
 
 
     let name = product.name;
@@ -14,7 +14,7 @@ const Product = ({ product }) => {
                     <Card className='product'>
                         <div className='product-img-box'>
 
-                        <Card.Img className='product-img' variant="top" onClick={()=>{window.location.href = `/anemone/${url}`}}  src={images} />
+                        <Card.Img className='product-img' variant="top" onClick={()=>{window.location.href = `/${category}/${url}`}}  src={images} />
                         </div>
                         <Card.Body className='product-name-box'>
                             <Card.Title className='product-name'> {name} </Card.Title>
