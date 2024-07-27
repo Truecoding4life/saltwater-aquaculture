@@ -1,9 +1,12 @@
 
 #feature {
   width: 100%;
-    font-size: 20px;
-    background-color: rgba(8, 10, 9, 0.926);
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.926);
     color: #ffffff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    
   }
   
  

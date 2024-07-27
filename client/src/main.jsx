@@ -1,4 +1,3 @@
-import React from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx'
@@ -12,7 +11,7 @@ import Guarantee from './pages/Guarantee/Guarantee.jsx';
 import MilitaryDiscount from './pages/MilitaryDiscount/MilitaryDiscount.jsx';
 import Shipping from './pages/Shipping/Shipping.jsx';
 import SpecialRequest from './pages/SpecialRequest/SpecialRequest.jsx';
-
+import Detail from './pages/Detail/Detail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: 'sale',
         element: < SalePage/>,
+      },
+      {
+        path: 'sale/:id',
+        element: < Detail/>,
       },
       {
         path: 'about-us',

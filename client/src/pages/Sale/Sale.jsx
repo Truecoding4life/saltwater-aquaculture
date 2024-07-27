@@ -13,7 +13,7 @@ const SalePage = () => {
         <Container id='shop'>
             <Row>
                 <Col id='header'>
-                    <h1> Anemone  </h1>
+                    <h3> Anemone  </h3>
                 </Col>
             </Row>
             <Row id='subheader' >
@@ -23,14 +23,17 @@ const SalePage = () => {
                     </p>
                 </Col>
             </Row>
-            <Row id='store' className=' p-2' >
+            <Row id='store' className=' ' >
                 <Col xl={3}>
                     <Card className='product'>
-                        <Card.Img variant="top"  src="https://coralsanonymous.com/cdn/shop/files/PC140981-Copy_b316c012-62f6-43f9-a6e7-a76e6ef3c189_1024x1024.jpg?v=1703901299" />
-                        <Card.Body>
+                        <div className='product-img-box'>
+
+                        <Card.Img className='product-img' variant="top" onClick={()=>{window.location.href = '/sale/1'}}  src="https://coralsanonymous.com/cdn/shop/files/PC140981-Copy_b316c012-62f6-43f9-a6e7-a76e6ef3c189_1024x1024.jpg?v=1703901299" />
+                        </div>
+                        <Card.Body className='product-name-box'>
                             <Card.Title className='product-name'> Chicago Sunburst Anemone </Card.Title>
-                           
-                            <Button variant="dark">Add to Cart</Button>
+                            <Card.Text className='product-price'> $400.00 </Card.Text>
+                            {/* <Button variant="dark" href='/product/1' >Add to Cart</Button> */}
                         </Card.Body>
                     </Card>
                    

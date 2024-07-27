@@ -1,28 +1,55 @@
 #shop{
     min-height: 100vh;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(255, 255, 255);
     font-family: "Roboto", sans-serif;
+    margin-top: 10px;
 }
 
 #shop #header {
-    padding: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #shop #subheader {
-    padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
 }
 
 #store .product-name{
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
   font-style: normal;
+  color: #161616;
+}
+
+.product-price{
+    color: #3b3737;
 }
 
 #store .product:hover{
     cursor: pointer;
+    
    
+    
 }
 
+.product-img{
+    border-radius: 0;
+}
+
+.product-img-box{
+    overflow: hidden;
+}
+
+.product{
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.product-name-box{
+    background-color: rgba(233, 234, 238, 0.919);
+}
+
+.product-img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}

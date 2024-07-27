@@ -1,0 +1,25 @@
+#price-display{
+    border-bottom: 1px solid black;
+    
+}
+
+#price{
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+#product-name{
+    padding-block: 10px;
+}
+
+#product-description{
+    padding-block: 10px;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+#add-to-cart-section{
+    margin-inline-end: 10%;
+};

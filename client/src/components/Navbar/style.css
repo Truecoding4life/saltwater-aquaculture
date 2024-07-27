@@ -1,6 +1,7 @@
 #navbar{
-    background-color: #000000eb;
+    background-color: #162331fd;
     color: white;
+    
    
 }
 
@@ -19,8 +20,8 @@
 #nav-brand{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-size: 50px;
-    margin-inline: auto;
+    font-size: 30px;
+    margin-inline: 10px;
     color: #fcfcfc;
     
 }
@@ -30,3 +31,24 @@
     transition: 0.2s;
     color: rgb(244, 244, 244);
 }
+
+.inline-link {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(207, 206, 206);
+    margin-left: 20px;
+    font-size: 20px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.3s ease;
+    
+  }
+
+  .inline-link:hover{
+    color: #ffffff;
+   border-bottom: 2px solid white;
+ 
+  
+  }
+  
+
+ 

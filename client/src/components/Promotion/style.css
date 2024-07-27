@@ -2,26 +2,21 @@
     --special-character: rgb(73, 65, 107) ;
 }
 .container{
-    position: relative;
     width: 100%;
     padding: 0;
    
 }
 
-#promoteImage{
-    border-radius: 0px;
-    width: 100%;
-    height: 100%;
+.promote-image{
+    height: 500px;
 }
 
 #promoteString{
-        position: absolute;
-        font-size: 60px;
-        font-family:  "Roboto";
-        font-weight: bold;
+        font-size: 50px;
+        font-family: "Bebas Neue", sans-serif;
+       
         color: #e5e4e4;   
-        top: 9%;
-        left: 5%;
+        margin: auto;
         background-color: none;
         text-shadow:       2px 2px 0 var(--special-character), 
         -2px -2px 0 var(--special-character),
@@ -34,12 +29,10 @@
  }
 
  #releaseString{
-    position: absolute;
     font-size: 80px;
     font-weight: bold;
     color: #ededed;   
-    top: 5%;
-    left: 5%;
+    
     background-color: none;
     text-shadow:       2px 2px 0 var(--special-character), 
     -2px -2px 0 var(--special-character),
@@ -58,10 +51,13 @@
 
 #headline{ 
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 #context{
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 40px;
+    letter-spacing: 1px;
 }
+

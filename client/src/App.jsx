@@ -17,15 +17,13 @@ function App() {
 
       <Container fluid>
         <Row>
+          <Feature/>
+        </Row>
+        <Row>
 
           <NavbarS />
         </Row>
-        <Row>
-      <NavLink/>
-        </Row>
-        <Row>
-          <Feature/>
-        </Row>
+
 
        <Outlet className='text-center'/>
 

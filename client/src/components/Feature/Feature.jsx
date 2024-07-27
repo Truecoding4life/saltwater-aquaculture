@@ -19,15 +19,18 @@ let medalIcon = <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" f
 
 const Feature = () => {
     return (
-        <Container fluid id="feature" className='text-center'>
+        <div id="feature">
+
+        
+        <Container  className='text-center'>
             <Row >
                 <Col className="d-flex justify-content-center align-items-center">  <p className='m-0'> <i> {personIcon} </i> Military Discount </p>  </Col>
-                <Col className="d-flex justify-content-center align-items-center">  <p className='m-0'> <i > {truckIcon}</i> Next Day Delivery</p>
+                <Col className="d-flex justify-content-center align-items-center">  <p className='m-0'> <i > {truckIcon}</i> 45$ Flat Rate Nationwide Shipping </p>
 
                 </Col>
                 <Col className="d-flex justify-content-center align-items-center">  <p className='m-0'> <i> {medalIcon}</i> 100% Money Back Guarantee </p></Col>
             </Row>
-        </Container>
+        </Container></div>
     )
 }
 
