@@ -18,11 +18,11 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
   font-style: normal;
-  color: #161616;
+  color: #f1efef;
 }
 
 .product-price{
-    color: #3b3737;
+    color: #a6a5a5;
 }
 
 #store .product:hover{
@@ -46,7 +46,7 @@
 }
 
 .product-name-box{
-    background-color: rgba(233, 234, 238, 0.919);
+    background-color: rgba(39, 42, 50, 0.919);
 }
 
 .product-img:hover{

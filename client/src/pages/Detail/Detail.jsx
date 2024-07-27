@@ -1,15 +1,21 @@
 import './style.css'
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { ButtonGroup, Button, Form, InputGroup } from 'react-bootstrap'
+import Animals from '../../utils/seed.js';
 
 
-const Animals = [ {coral: []}, {anemone: [ { 'Chicago Sun Burst': {name:'Chicago Sunburst', price : 400 , inStock: true, care: 'For Chicago Sunburst we recommend good water parameter, medium to high flow is extremely important to keep these guys happy and wavy. Feeding is not necessary for them because they can generate their own energy through photosynthesis that why having a decent LED from 200 to 300 PAR is ideally to bring our their stunning color.', description: 'The Chicago Sunburst Anemone is a stunning variant of the Bubble Tip Anemone (Entacmaea quadricolor). Its origin traces back to a specific lineage of Bubble Tip Anemones that displayed unique and vibrant coloration, primarily shades of orange and yellow, reminiscent of a sunburst.'}}]}, {fish: [ { 'Clown Fish': {name:'Clown Fish'}}]}]
+
+
 const Detail = () => {
-    let product = Animals[1].anemone[0]['Chicago Sun Burst'];
+    let {id , category} = useParams();
+
+    
+    let product = Animals[category]?.[id];
     const [quantity, setQuantity] = useState(1);
     const handleIncrement = () => {
         setQuantity(quantity + 1);
@@ -25,7 +31,7 @@ const Detail = () => {
         <Container className="container p-3 ">
             <Row>
                 <Col xl={4} className='d-flex justify-content-center'>
-                    <img style={{ width: '100%' }} src="https://coralsanonymous.com/cdn/shop/files/PC140981-Copy_b316c012-62f6-43f9-a6e7-a76e6ef3c189_1024x1024.jpg?v=1703901299" alt="" />
+                    <img style={{ width: '100%' }} src={product.image} alt="" />
                 </Col>
                 <Col xl={8} className=''>
                     <div id='add-to-cart-section' style={{ paddingInlineEnd:'30%'}}  >
@@ -59,13 +65,11 @@ const Detail = () => {
             <Row id='product-description'>
                 <Col xl={12}>
                     <h3> Chicago Sunburst Anemone </h3>
-                    <p> The Chicago Sunburst Anemone is a stunning variant of the Bubble Tip Anemone (Entacmaea quadricolor). Its origin traces back to a specific lineage of Bubble Tip Anemones that displayed unique and vibrant coloration, primarily shades of orange and yellow, reminiscent of a sunburst.
-
-                        The name Chicago Sunburst is derived from its distinct appearance and its identification or propagation by aquarium enthusiasts and breeders, particularly those in the Chicago area. Over time, these anemones were selectively bred and propagated in captivity to enhance and stabilize their striking coloration, leading to their popularity among marine aquarium hobbyists </p>
+                    <p> {product.description} </p>
                 </Col>
                 <Col xl={12}>
                     <h3> Care Requirement</h3> 
-                    <p> For Chicago Sunburst we recommend good water parameter, medium to high flow is extremely important to keep these guys happy and wavy. Feeding is not necessary for them because they can generate their own energy through photosynthesis that why having a decent LED from 200 to 300 PAR is ideally to bring our their stunning color.</p>
+                    <p> {product.care}</p>
                 </Col>
 
             </Row>

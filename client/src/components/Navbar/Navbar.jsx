@@ -18,7 +18,7 @@ const NavbarS = () => {
            <Navbar.Brand id='nav-brand' href="/"> Saltwater Aquaculture </Navbar.Brand>
 
 
-            <Link to='sale' className="inline-link">
+            <Link to='anemone' className="inline-link">
               <h4>Anemone</h4>
             </Link>
             <Link to='shipping' className="inline-link">

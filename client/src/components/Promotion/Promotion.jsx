@@ -21,13 +21,13 @@ const Promotion = () => {
       <Row id="aquaculture" >
        
         <Col xl={6} id="context" >
-          <h1 id="headline"> Aquaculture </h1>{" "}
+          <h1 id="headline"> About Us </h1>{" "}
          <p>
          Aquaculture is the practice of farming or breeding marine species in controlled environments. Our goal is to offer the highest quality specimens possible with the most sustainable practices.
         </p>
         </Col>
         <Col xl={6} className="text-center"> <img src="https://assets.technologynetworks.com/production/dynamic/images/content/380588/lab-grown-algae-can-help-coral-weather-bleaching-380588-960x540.jpg?cb=12537234"
-            alt="Aquaculture" style={{width:'90%', height:'auto', borderRadius:'10px'}} /> </Col>
+            alt="Aquaculture" style={{width:'100%', height:'auto', borderRadius:'10px'}} /> </Col>
        
       </Row>
     </Container>
