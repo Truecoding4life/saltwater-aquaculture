@@ -64,7 +64,7 @@ const Detail = () => {
             </Row>
             <Row id='product-description'>
                 <Col xl={12}>
-                    <h3> Chicago Sunburst Anemone </h3>
+                    <h3> {product.name} </h3>
                     <p> {product.description} </p>
                 </Col>
                 <Col xl={12}>
