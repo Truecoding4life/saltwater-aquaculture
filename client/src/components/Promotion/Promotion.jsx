@@ -1,34 +1,40 @@
 import "./style.css";
-import background1 from "../../../public/images/background.jpg";
-import background2 from "../../../public/images/release.webp";
+import 'animate.css';
+import background1 from "../../assets/background.jpg";
+import background2 from "../../assets/background-2.jpg";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FaAngleUp } from "react-icons/fa6";
 
 const Promotion = () => {
   return (
     <Container fluid  className="p-0">
-      <Row style={{backgroundImage: `url(${background1})`}} className="text-center p-0 promote-image" >
-       
+      <Row style={{backgroundImage: `url(${background1})`}} className=" p-0 promote-image" >
+        <Col>      
+            <h3 className="promoteString" > Premium Bubble Tip Anemone  </h3>
+            <button onClick={()=>window.location.href = '/anemone'} className=" sub-promote animate__animated animate__flash" > go to collection</button>
+
+        </Col>
           {/* <img
             id="promoteImage"
             src={background1}
             alt="anemone and clown fish background"
           ></img> */}
-          <h3 id="promoteString" > We Aquaculture Coral and Anemone  </h3>
        
       </Row>
-      <Row id='about-us'>
+      <Row id='about-us' className="text-center">
        
-        <Col xl={6} id="context" >
-          <h1 className="header"> About Us </h1>{" "}
+        <Col xl={12} id="context" >
+            <i> <FaAngleUp size={32} className="animate__animated animate__heartBeat animate__delay-4s animate__repeat-3" />
+            </i>
+          <h1 className="header"> Why Choose Us </h1>{" "}
          <p>
-         Aquaculture is the practice of farming or breeding marine species in controlled environments. Our goal is to offer the highest quality specimens possible with the most sustainable practices.
+         We are a veteran owned business dedicated to providing the highest quality specimens using sustainable practices. We are constantly working to expand our selection of specimens and are always looking for new and innovative ways to improve our aquaculture practices.
         </p>
         </Col>
-        <Col xl={6} className="text-center"> <img src="https://assets.technologynetworks.com/production/dynamic/images/content/380588/lab-grown-algae-can-help-coral-weather-bleaching-380588-960x540.jpg?cb=12537234"
-            alt="Aquaculture" style={{width:'100%', height:'auto', borderRadius:'10px'}} /> </Col>
+      
        
       </Row>
     </Container>

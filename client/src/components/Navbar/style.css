@@ -34,6 +34,7 @@
 
 .inline-link {
     display: inline-block;
+    font-family:  "Bebas Neue", sans-serif;
     text-decoration: none;
     color: rgb(207, 206, 206);
     margin-left: 20px;

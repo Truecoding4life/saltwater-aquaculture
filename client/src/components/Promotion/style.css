@@ -1,5 +1,5 @@
 *{
-    --special-character: rgb(73, 65, 107) ;
+    --special-character: rgb(3, 8, 19) ;
 }
 .container{
     width: 100%;
@@ -8,16 +8,20 @@
 }
 
 .promote-image{
-    height: 500px;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#promoteString{
-        font-size: 50px;
+.promote-image-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promoteString{
+        font-size: 90px;
         font-family: "Bebas Neue", sans-serif;
-       
-        color: #e5e4e4;   
-        margin: auto;
-        background-color: none;
+       margin-top: 20px;
+        color: #eeecec;   
         text-shadow:       2px 2px 0 var(--special-character), 
         -2px -2px 0 var(--special-character),
         2px -2px 0 var(--special-character),
@@ -26,6 +30,15 @@
         -2px 0 0 var(--special-character),
         0 2px 0 var(--special-character),
         0 -2px 0 var(--special-character);;
+ }
+
+ .sub-promote{
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(247, 204, 33);
+    font-size: 40px;
+    background-color: #0b0a0a;
+    border-radius: 10px;
+ 
  }
 
  #releaseString{
@@ -45,8 +58,9 @@
 }
 
 #about-us{
-    margin-top: 100px;
-    margin-bottom: 300px;
+    height: 20vh;
+    margin-top: 40px;
+    margin-bottom: 200px;
 }
 
 #headline{ 
@@ -56,8 +70,7 @@
 
 #context{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding: 40px;
+    font-size: 19px;
     letter-spacing: 1px;
 }
 
