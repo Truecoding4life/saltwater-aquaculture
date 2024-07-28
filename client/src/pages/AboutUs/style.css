@@ -1,0 +1,11 @@
+#about-us-container {
+  margin-top: 10px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.image-about-us{
+    width: auto;
+    max-height: 100px;
+}

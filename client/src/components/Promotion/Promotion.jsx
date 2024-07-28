@@ -1,13 +1,14 @@
 import "./style.css";
 import background1 from "../../../public/images/background.jpg";
 import background2 from "../../../public/images/release.webp";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Promotion = () => {
   return (
-    <Container fluid className="p-0">
+    <Container fluid  className="p-0">
       <Row style={{backgroundImage: `url(${background1})`}} className="text-center p-0 promote-image" >
        
           {/* <img
@@ -18,10 +19,10 @@ const Promotion = () => {
           <h3 id="promoteString" > We Aquaculture Coral and Anemone  </h3>
        
       </Row>
-      <Row id="aquaculture" >
+      <Row id='about-us'>
        
         <Col xl={6} id="context" >
-          <h1 id="headline"> About Us </h1>{" "}
+          <h1 className="header"> About Us </h1>{" "}
          <p>
          Aquaculture is the practice of farming or breeding marine species in controlled environments. Our goal is to offer the highest quality specimens possible with the most sustainable practices.
         </p>
