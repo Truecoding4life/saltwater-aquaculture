@@ -5,11 +5,11 @@
     margin-top: 10px;
 }
 
-#shop #header {
-    font-family: "Bebas Neue", sans-serif;
-}
 
-#shop #subheader {
+
+
+
+.subheader {
     font-size: 15px;
     letter-spacing: 0.5px;
 }
@@ -53,3 +53,4 @@
     transform: scale(1.1);
     transition: 0.5s;
 }
+

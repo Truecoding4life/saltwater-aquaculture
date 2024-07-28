@@ -1,4 +1,4 @@
-
+import './style.css'
 import Promotion from "../../components/Promotion/Promotion"
 
 const Homepage = ()=>{

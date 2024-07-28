@@ -22,8 +22,8 @@ const SalePage = () => {
         return (
             <Container id='shop'>
                 <Row>
-                    <Col id='header'>
-                        <h3>Category Not Found</h3>
+                    <Col className='header'>
+                        <h3  >Category Not Found</h3>
                     </Col>
                 </Row>
                 <Row>
@@ -38,11 +38,11 @@ const SalePage = () => {
     return (
         <Container id='shop'>
             <Row>
-                <Col id='header'>
+                <Col className='header'>
                     {category === 'anemone' ? <h3>Anemone</h3> : <h3>Corals</h3>}
                 </Col>
             </Row>
-            <Row id='subheader'>
+            <Row className='subheader'>
                 <Col>
                     <p>
                         Here at Saltwater Aquaculture, we cultivate and propagate the most beautiful species for aquarium enthusiasts. Like you, we are passionate about rare and exotic anemones and corals that are rarely seen for sale in aquarium stores. Our goal is to offer our customers the most affordable prices and reliable services.
