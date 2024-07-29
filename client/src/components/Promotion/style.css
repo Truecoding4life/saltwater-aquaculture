@@ -34,10 +34,11 @@
 
  .sub-promote{
     font-family: "Bebas Neue", sans-serif;
-    color: rgb(247, 204, 33);
+    color: rgb(230, 229, 227);
     font-size: 40px;
-    background-color: #0b0a0a;
+    background-color: #3f812c;
     border-radius: 10px;
+    text-shadow: none;
  
  }
 
