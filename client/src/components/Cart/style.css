@@ -1,0 +1,27 @@
+#shopping-cart{
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkout-products{
+    height: 444px;
+}
+
+
+.checkout-total, .checkout-coupon {
+    margin-block: 10px;
+    border-bottom: 2px solid #c1c1c1;
+}
+
+.checkout-total {
+    font-weight: 500;
+}
+
+.checkout-coupon{
+    border-top: 2px solid #c1c1c1;
+    color: rgb(47, 112, 217);
+    padding-top: 20px;
+}
+
+.checkout-coupon:hover{
+    cursor: pointer;
+}
