@@ -1,6 +1,6 @@
 import "./style.css";
 import 'animate.css';
-import background1 from "../../assets/background.jpg";
+import background1 from "../../assets/background-test.jpg";
 import background2 from "../../assets/background-2.jpg";
 
 import Container from "react-bootstrap/Container";
