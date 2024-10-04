@@ -3,17 +3,21 @@ const jwt = require('jsonwebtoken');
 
 const secret = 'mysecret'
 const expiration = '2h'
-
-module.exports = {
-    AuthenticationError: new GraphQLError(' User Authentication Fail', {
-        extension: {
-            code: "UNAUTHENTICATED"
+class AuthenticationError extends GraphQLError {
+    constructor(message) {
+      super(message, {
+        extensions: {
+          code: 'UNAUTHENTICATED',
         },
-    }),
-    authMiddleware: function ({reg}){
+      });
+    }
+  }
+module.exports = {
+    AuthenticationError,
+    authMiddleware: function ({req}){
         let token = req.body.token || req.query.token || req.headers.authorization;
 
-        if(req.header.authorization){
+        if(req.headers.authorization){
             token = token.split(' ').pop().trim();
         }
 

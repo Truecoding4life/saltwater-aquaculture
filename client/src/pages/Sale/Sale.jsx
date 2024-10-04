@@ -37,7 +37,7 @@ const SalePage = () => {
 
     return (
         <Container id='shop'>
-            <Row>
+            <Row className='headline'>
                 <Col className='header'>
                     {category === 'anemone' ? <h3>Anemone</h3> : <h3>Corals</h3>}
                 </Col>

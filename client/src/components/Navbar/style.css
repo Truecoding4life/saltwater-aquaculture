@@ -1,10 +1,19 @@
+*{
+    --navbar-font-color: #222222;
+    --navbar-hover-color: #5e5c5c;
+}
+
+
 #navbar{
-    background-color: #162331fd;
-    color: white;
+    background-color: #f4f1f1fd;
+    color: rgb(42, 41, 41);
     
    
 }
 
+.navbar-button{
+    color: var(--navbar-font-color);
+}
 #saleOffer{
     background-color: rgba(212, 60, 60, 0.873);
     font-weight: 600;
@@ -22,21 +31,21 @@
     font-weight: 400;
     font-size: 30px;
     margin-inline: 10px;
-    color: #fcfcfc;
+    color: var(--navbar-font-color)
     
 }
 
 #nav-brand:hover{
     transform: scale(1.1);
     transition: 0.2s;
-    color: rgb(244, 244, 244);
+    color: var(--navbar-hover-color)
 }
 
 .inline-link {
     display: inline-block;
     font-family:  "Bebas Neue", sans-serif;
     text-decoration: none;
-    color: rgb(207, 206, 206);
+    color: var(--navbar-font-color);
     margin-left: 20px;
     font-size: 20px;
     border-bottom: 4px solid transparent;
@@ -45,11 +54,14 @@
   }
 
   .inline-link:hover{
-    color: #ffffff;
+   color: var(--navbar-hover-color);
    border-bottom: 2px solid white;
  
   
   }
   
-
- 
+  #login-button {
+    background-color: transparent; /* Change to the desired color */
+    color: rgb(0, 0, 0); /* Text color */
+    border: none;
+  }

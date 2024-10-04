@@ -1,23 +1,23 @@
-const { User } = require('../models');
+const { User, Product } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('messages');
+      return User.find()
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('messages');
+      return User.findOne({ username })
     },
     me: async (parent, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id }).populate('messages');
+        return User.findOne({ _id: context.user._id })
       }
       throw new AuthenticationError('You need to be logged in!');
     },
     messages: async (parent, { userId }) => {
       try{
-      return User.findOneById({ _id: userId }).populate('messages');
+      return User.findOneById({ _id: userId })
       } catch (err) {
         console.log(err);
       }
@@ -34,7 +34,7 @@ const resolvers = {
       const user = await User.findOne({ username });
 
       if (!user) {
-        throw AuthenticationError;
+        throw new AuthenticationError;
       }
 
       const correctPw = await user.isCorrectPassword(password);

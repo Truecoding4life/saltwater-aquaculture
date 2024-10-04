@@ -14,6 +14,21 @@ const typeDefs = `
     createdAt: String
   }
 
+  type Product {
+  _id: ID
+  name: String
+  description: String
+  image: String
+  quantity: Int
+  price: Float
+  category: Category
+  discount_price: Float
+  }
+
+  type Category {
+  name: String
+  }
+
   type Auth {
     token: ID!
     user: User

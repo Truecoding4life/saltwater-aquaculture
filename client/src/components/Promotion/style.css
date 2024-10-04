@@ -1,77 +1,93 @@
-*{
-    --special-character: rgb(3, 8, 19) ;
+* {
+    --special-character: rgb(3, 8, 19);
 }
-.container{
+
+.container {
     width: 100%;
     padding: 0;
-   
+
+}
+.font-style{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    color: rgb(121, 234, 106);
+    
+}
+.promote-container{
+    background-color: #5bcb74;
+    padding-block: 30px;
 }
 
-.promote-image{
-    height: 65vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+.fish{
+    padding: 30px;
+    background-color: rgba(32, 32, 32, 0.946);
 }
 
-.promote-image-2 {
-    background-repeat: no-repeat;
-    background-size: cover;
+.promote-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 700px;
+    
+
 }
-.promoteString{
-        font-size: 90px;
-        font-family: "Bebas Neue", sans-serif;
-       margin-top: 20px;
-        color: #eeecec;   
-        text-shadow:       2px 2px 0 var(--special-character), 
+
+.sale{
+    background-color: rgba(21, 20, 20, 0.274);
+    height: fit-content;
+}
+
+.promoteString {
+    font-size: 90px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 10px;
+    color: rgb(121, 234, 106);
+    
+}
+
+.sub-promote {
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(121, 234, 106);
+    font-size: 40px;
+    border-radius: 5px;
+    text-shadow: none;
+    background-color: transparent;
+    margin-top: 5px;
+    border: none;
+
+}
+
+#releaseString {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ededed;
+
+    background-color: none;
+    text-shadow: 2px 2px 0 var(--special-character),
         -2px -2px 0 var(--special-character),
         2px -2px 0 var(--special-character),
         -2px 2px 0 var(--special-character),
         2px 0 0 var(--special-character),
         -2px 0 0 var(--special-character),
         0 2px 0 var(--special-character),
-        0 -2px 0 var(--special-character);;
- }
-
- .sub-promote{
-    font-family: "Bebas Neue", sans-serif;
-    color: rgb(230, 229, 227);
-    font-size: 40px;
-    background-color: #3f812c;
-    border-radius: 10px;
-    text-shadow: none;
- 
- }
-
- #releaseString{
-    font-size: 80px;
-    font-weight: bold;
-    color: #ededed;   
-    
-    background-color: none;
-    text-shadow:       2px 2px 0 var(--special-character), 
-    -2px -2px 0 var(--special-character),
-    2px -2px 0 var(--special-character),
-    -2px 2px 0 var(--special-character),
-    2px 0 0 var(--special-character),
-    -2px 0 0 var(--special-character),
-    0 2px 0 var(--special-character),
-    0 -2px 0 var(--special-character);;
+        0 -2px 0 var(--special-character);
+    ;
 }
 
-#about-us{
+#about-us {
     height: 20vh;
     margin-top: 40px;
     margin-bottom: 200px;
 }
 
-#headline{ 
+#headline {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
 
-#context{
+#context {
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
     letter-spacing: 1px;
 }
-
