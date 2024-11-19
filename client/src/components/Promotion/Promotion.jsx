@@ -15,19 +15,15 @@ const Promotion = () => {
   return (
     <Container fluid className="p-0">
       <Row className=" p-0 promote promote-container" >
-        <Col sm={12} className="text-center sale">
-          <h3 className="promoteString" > Premium Marine Aquaculture   </h3>
-          
-
-        </Col  >
+       
         <Col sm={12} className="text-center fish" style={{ position: 'relative' }}>
           <Row>
-            <Col sm={4} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-            <p className="font-style"> Get your first coral with us today</p>
+            <Col sm={6}  style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <h2 className="font-style-2"> Get your first coral with us today</h2>
             <button onClick={() => window.location.href = '/anemone'} className=" sub-promote animate__animated animate__flash" > Go To Sale <i><FiArrowDownRight />
           </i></button>
             </Col>
-            <Col sm={8}>
+            <Col sm={6} style={{marginLeft:0}}>
           <img src={background1} className="promote-image" ></img>
             </Col>
 

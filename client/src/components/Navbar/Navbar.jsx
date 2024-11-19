@@ -4,16 +4,22 @@ import { Container, Button, Navbar, Offcanvas } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdPerson } from "react-icons/io";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 import { Link } from 'react-router-dom';
 import './style.css'
 
 const NavbarS = () => {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const handleLogin = function name(params) {
+  const handleLogin = function () {
+    return (
+      setDropdownVisible(!dropdownVisible)
+    );
 
   }
   return (
@@ -38,15 +44,27 @@ const NavbarS = () => {
             </Link>
           </div>
 
-          <div className='navbar-button ms-auto'>
-            <Button type='button' onClick={handleLogin} id='login-button' >
+          <div className='navbar-button ms-auto d-flex'>
+            <div>
 
-              <i className='bg-none'>  <IoMdPerson size={23} /></i>
 
-            </Button>
-            <Button type='button' onClick={handleShow} variant='none'>
-              <i className="navbar-button bg-none"><FaCartShopping size={23} /></i>
-            </Button>
+              <Dropdown align="end">
+                <Dropdown.Toggle id="login-button" variant="none" className="d-flex align-items-center">
+                  <IoMdPerson size={23} />
+                </Dropdown.Toggle>
+                <Dropdown.Menu >
+                  <Dropdown.Item href="#/action-1">Login</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Sign Up</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Reset Password</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+            <div>
+              <Button type='button' onClick={handleShow} variant='none'>
+                <i className="navbar-button bg-none"><FaCartShopping size={23} /></i>
+              </Button>
+            </div>
+
 
 
 
